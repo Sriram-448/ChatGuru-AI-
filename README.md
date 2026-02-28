@@ -1,5 +1,8 @@
 # 🏴‍☠️ ChatGuru AI
 
+## 🌐 Live Demo
+👉 **[Try ChatGuru Live!](https://chatguru-ai.netlify.app)**
+
 > *"I'm gonna be the King of the Pirates!"* — And you're gonna be the master of AI chat.
 
 **ChatGuru** is a full-stack AI chatbot powered by **Groq's LLaMA 3.3 70B** model, built with a **FastAPI** backend and a One Piece themed frontend with splash screen animations, floating particles, and a rotating sunray background.
