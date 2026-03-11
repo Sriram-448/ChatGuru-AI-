@@ -3,7 +3,7 @@
 ## 🌐 Live Demo
 👉 **[Try ChatGuru Live!](https://chatguru-ai.netlify.app)**
 
-> *"I'm gonna be the King of the Pirates!"* — And you're gonna be the master of AI chat.
+> *"I'm gonna be the King of the Pirates!"* - And you're gonna be the master of AI chat.
 
 **ChatGuru** is a full-stack AI chatbot powered by **Groq's LLaMA 3.3 70B** model, built with a **FastAPI** backend and a One Piece themed frontend with splash screen animations, floating particles, and a rotating sunray background.
 
@@ -11,15 +11,15 @@
 
 ## ✨ Features
 
-- 🤖 **LLaMA 3.3 70B** — lightning-fast AI responses via Groq
-- 🏴‍☠️ **One Piece themed UI** — animated splash screen with both images
-- 🌟 **Rotating sunray background** inspired by Luffy's iconic pose
-- ✨ **Floating gold particles** and smooth animations
-- ⌨️ **Typing indicator** while AI is thinking
-- 💬 **Multi-turn conversation memory** per session
-- 🔒 **Secure API key** management via `.env`
-- 📱 **Fully responsive** — works on mobile and desktop
-- ⚓ **"Set Sail!" splash screen** on every launch
+-  **LLaMA 3.3 70B** - lightning-fast AI responses via Groq
+-  **One Piece themed UI** - animated splash screen with both images
+-  **Rotating sunray background** inspired by Luffy's iconic pose
+-  **Floating gold particles** and smooth animations
+-  **Typing indicator** while AI is thinking
+-  **Multi-turn conversation memory** per session
+-  **Secure API key** management via `.env`
+-  **Fully responsive** - works on mobile and desktop
+-  **"Set Sail!" splash screen** on every launch
 
 ---
 
@@ -34,7 +34,7 @@
 │   │                                              │   │
 │   │  ┌─────────────┐    ┌─────────────────────┐  │   │
 │   │  │ Splash      │    │   Chat Interface    │  │   │
-│   │  │ Screen      │───▶│                     │  │   │
+│   │  │ Screen      │ -  │                     │  │   │
 │   │  │             │    │  ┌───────────────┐  │  │   │
 │   │  │ onepiece-1  │    │  │  Chat Bubble  │  │  │   │
 │   │  │ onepiece-2  │    │  │  Typing Dots  │  │  │   │
@@ -45,16 +45,16 @@
 │                      │  HTTP POST /chat               │
 └──────────────────────┼──────────────────────────────-┘
                        │
-                       ▼
+                       
 ┌─────────────────────────────────────────────────────┐
 │              Backend (FastAPI - Port 8000)           │
 │                                                      │
 │   ┌──────────────────────────────────────────────┐   │
 │   │                  main.py                     │   │
 │   │                                              │   │
-│   │   POST /chat ──▶ Session Manager             │   │
-│   │   DELETE /chat ──▶ Clear History             │   │
-│   │   GET /health ──▶ Status Check               │   │
+│   │   POST /chat - Session Manager             │   │
+│   │   DELETE /chat - Clear History             │   │
+│   │   GET /health - Status Check               │   │
 │   │                                              │   │
 │   │   ┌────────────────────────────────────┐     │   │
 │   │   │        Chat Session Store          │     │   │
@@ -62,13 +62,13 @@
 │   │   └────────────────────────────────────┘     │   │
 │   └──────────────────┬───────────────────────────┘   │
 │                      │                               │
-│   ┌──────────────────▼───────────────────────────┐   │
+│   ┌────────────────── .  ───────────────────────────┐   │
 │   │              .env (Secret)                   │   │
 │   │         GROQ_API_KEY=gsk_xxxx                │   │
 │   └──────────────────┬───────────────────────────┘   │
 └──────────────────────┼──────────────────────────────-┘
                        │  HTTPS API Call
-                       ▼
+                       
 ┌─────────────────────────────────────────────────────┐
 │                  Groq Cloud API                      │
 │                                                      │
@@ -83,19 +83,19 @@
 
 ```
 ChatGuru/
-├── .gitignore                  ← Hides .env from GitHub
-├── README.md                   ← You are here
+├── .gitignore                  - Hides .env from GitHub
+├── README.md                   - You are here
 │
 ├── Backend/
-│   ├── main.py                 ← FastAPI server & Groq integration
-│   ├── requirements.txt        ← Python dependencies
-│   ├── .env                    ← Your secret API key (NOT on GitHub)
-│   └── .env.example            ← Template for others
+│   ├── main.py                 - FastAPI server & Groq integration
+│   ├── requirements.txt        - Python dependencies
+│   ├── .env                    - Your secret API key (NOT on GitHub)
+│   └── .env.example            - Template for others
 │
 └── Frontend/
-    ├── index.html              ← Full chat UI with splash screen
-    ├── onepiece-1.webp         ← Luffy with flag background
-    └── onepiece-2.webp         ← Luffy smiling background
+    ├── index.html              - Full chat UI with splash screen
+    ├── onepiece-1.webp         - Luffy with flag background
+    └── onepiece-2.webp         - Luffy smiling background
 ```
 
 ---
@@ -141,7 +141,7 @@ python -m http.server 3000
 http://localhost:3000
 ```
 
-Click **⚓ Set Sail!** and start chatting! 🏴‍☠️
+Click ** Set Sail!** and start chatting! 
 
 ---
 
@@ -172,7 +172,7 @@ POST /chat
 
 ---
 
-## 🔒 Security
+##  Security
 
 - API key is stored in `.env` which is listed in `.gitignore`
 - The `.env` file is **never uploaded to GitHub**
@@ -180,7 +180,7 @@ POST /chat
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -194,8 +194,8 @@ POST /chat
 
 ## 👨‍💻 Built by
 
-**Sriram** — Built from scratch with 🏴‍☠️ and a lot of determination!
+**Sriram** - Built from scratch with 🏴‍☠️ and a lot of determination!
 
 ---
 
-*"The only ones who should kill are those who are prepared to be killed."* — But the only ones who should code are those prepared to debug! 😄
+*"The only ones who should kill are those who are prepared to be killed."* - But the only ones who should code are those prepared to debug! 
